@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block body %}
+    <title>e-Farm</title>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='main.jpg') }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>E-Farm Support</h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-md-1 mx-auto">
+          <div class="post-preview">
+              <br>
+            <table >
+              <tr>
+                  <td>
+                    <h2 style="font-size:100px"><a href="/land_rentals">Land</a></h2>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                  </td>
+                  <br>
+                  <td>
+                    <h2 style="font-size:100px"><a href="/rent">Machinery</a></h2>
+                  </td>
+              </tr>
+
+            </table>
+
+
+          </div>
+          <hr>
+          <!-- Pager -->
+          <div class="clearfix">
+            <a class="btn btn-primary float-right" href="/about">About us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    {% endblock %}
